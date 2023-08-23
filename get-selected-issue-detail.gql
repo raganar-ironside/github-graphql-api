@@ -1,0 +1,10 @@
+{
+    repository(name: "<YOUR_REPO_NAME>", owner: "<REPO OWNER>") {
+        name
+        id
+        issue(number: 1) {
+            title
+            id
+        }
+    }
+}
