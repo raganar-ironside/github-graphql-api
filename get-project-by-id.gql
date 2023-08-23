@@ -1,0 +1,10 @@
+{
+    organization(login: "raganar-ironside"){ // Replace it with your organization name
+        name
+        id
+        projectV2(number: 4) {  // Replace with your own Project Number. The number can be found in the project URL.
+            title
+            id
+        }
+    }
+}
