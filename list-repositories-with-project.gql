@@ -1,0 +1,19 @@
+{
+    organization(login: "raganar-ironside"){
+        name
+        id
+        projectsV2(first: 4) {
+            nodes {
+                title
+                id
+                repositories(first: 10) {
+                    totalDiskUsage
+                    nodes {
+                        description
+                        name
+                    }
+                }
+            }
+        }
+    }
+}
