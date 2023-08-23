@@ -1,0 +1,12 @@
+{
+    organization(login: "raganar-ironside"){ // Replace with your org name.
+        name
+        id
+        projectsV2(first: 4) { // Replace '4' with any number of projects you want to fetch.
+            nodes {
+                title
+                id
+            }
+        }
+    }
+}
