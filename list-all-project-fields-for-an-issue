@@ -1,0 +1,30 @@
+query {
+  organization(login: "raganar-ironside") {
+    name
+    id
+    projectV2(number: 4) {
+      title
+      id
+      fields(first: 100) {
+        totalCount
+        nodes {
+          ... on ProjectV2Field {
+            name
+            createdAt
+            dataType
+            databaseId
+            project {
+              title
+            }
+            updatedAt
+          }
+          ... on ProjectV2SingleSelectField {
+            name
+            id
+          }
+          # Add more inline fragments for other types in the union if needed
+        }
+      }
+    }
+  }
+}
